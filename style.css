@@ -43,9 +43,15 @@
   width:100%;
 }
 
-video.art{
+div.art{
   width: 50%;
   float: left;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+video.art{
+  width: 100%;
 }
 
 a{
