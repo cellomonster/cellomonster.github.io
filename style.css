@@ -44,22 +44,27 @@
   width:100%;
 }
 
-a.art{
+.griditem {
   height: 0;
   padding-bottom: 100%;
   display:block;
 }
 
-video.art{
+
+.content{
+  max-width: 800px;
+}
+
+video {
+  width: 100%;
+}
+
+img {
   width: 100%;
 }
 
 a{
   color: #E7FC00;
-}
-
-p{
-  max-width: 800px;
 }
 
 body{
@@ -69,10 +74,10 @@ body{
   color: #FFFFFF;
   font-size: 22px;
   width: 100%;
-  font-family: merriweather;
+  font-family: CrimsonText;
 }
 
-iframe {
+iframe.view {
   margin: 0;
   width: 100%;
   height: 100%;
@@ -86,7 +91,7 @@ iframe {
 }
 
 @font-face {
-  font-family: merriweather;
+  font-family: CrimsonText;
   src: url(CrimsonText-Regular.ttf);
 }
 
@@ -101,7 +106,7 @@ h1{
 
 h2{
   font-weight:normal;
-  //font-family: museoslab;
+  font-family: museoslab;
   font-size: 30px;
 }
 
