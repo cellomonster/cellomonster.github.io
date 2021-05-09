@@ -16,7 +16,13 @@
 
 <!-- Page content -->
 <div class="main" style = "overflow: hidden;">
-	<iframe class="view" name="frame" src="home.html" title="page body"></iframe>
+	<iframe id="view" name="frame" src="home.html" title="page body"></iframe>
 </div>
 </body>
+<script>
+	const urlParams = new URLSearchParams(window.location.search);
+	const page = urlParams.get('page');
+	const frame = document.getElementById("view");
+	frame.src = page;
+</script>
 </html>
