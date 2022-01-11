@@ -1,33 +1,80 @@
 <!DOCTYPE html>
-<html style="height:100%">
+<html>
 <head>
-<title>Cellomonster's page</title>
-<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style.css">
 </head>
-<body style="margin:0; padding:0; max-width: 100%; height: 100%;">
-
-<!-- Side navigation -->
-<div class="sidenav">
-	<img src="emblem.png" id="emblem" width="160" height="160">
-	<a href="home.html" target="frame">Home</a>
-	<a href="software.html" target="frame">Software</a>
-	<a href="artwork.html" target="frame">Artwork</a>
-	<p></p>
-	<a href="https://twitter.com/trev3d" target="_blank" rel="noopener noreferrer">Twitter</a>
-	<a href="https://github.com/Cellomonster" target="_blank" rel="noopener noreferrer">Github</a>
-	<a href="mailto:triveri@outlook.com" target="_blank" rel="noopener noreferrer">Email</a>
-</div>
-
-<!-- Page content -->
-<div class="main" style = "overflow: hidden;">
-	<iframe id="view" name="frame" src="home.html" title="page body"></iframe>
-</div>
+<body>
+    <script id="nav" src="nav.js"></script>
+    <h1>cellomonster</h1>
+    <div class="content">
+        <h2>
+            Hello!
+        </h2>
+        <p style="margin: 0px;">
+            I'm a hobbyist software developer & 3D artist from the US. Below is a collection of personal projects I'm proud of. Click on anything to learn more about it
+        </p>
+    </div>
+    <div class="grid">
+        <a href="artwork/cyaneve.html">
+            <video autoplay muted loop>
+                <source src="artwork/thumbnail/cyaneve.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="software/lbpr.html">
+            <video autoplay muted loop>
+                <source src="software/thumbnail/lbpr.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="artwork/homeenv.html">
+            <video autoplay muted loop>
+                <source src="artwork/thumbnail/homeenv.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="artwork/applescruff.html">
+            <video autoplay muted loop>
+                <source src="artwork/thumbnail/applescruff.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="artwork/bear.html">
+            <img src="artwork/thumbnail/bear.jpg">
+        </a>
+        <a href="software/curvetohair.html">
+            <video autoplay muted loop>
+                <source src="software/thumbnail/cthdemo.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="software/discordpebble.html">
+            <img src="software/thumbnail/discordpebble.jpg">
+        </a>
+        <a href="artwork/adrianne.html">
+            <video autoplay muted loop>
+                <source src="artwork/thumbnail/adrianne.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="artwork/fuzz.html">
+            <video autoplay muted loop>
+                <source src="artwork/thumbnail/fuzz.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="artwork/trevvr.html">
+            <video autoplay muted loop>
+                <source src="artwork/thumbnail/vrchattrev.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="software/discordclassic.html">
+            <img src="software/thumbnail/discordclassic.jpg">
+        </a>
+        <a href="software/multiwm.html">
+            <img src="software/thumbnail/multiwm.png">
+        </a>
+        <a href="artwork/midnight.html">
+            <video autoplay muted loop>
+                <source src="artwork/thumbnail/midnight.mp4" type="video/mp4">
+            </video>
+        </a>
+        <a href="software/site.html">
+            <img src="software/thumbnail/site.png">
+        </a>
+    </div>
 </body>
-<script>
-	const urlParams = new URLSearchParams(window.location.search);
-	const page = urlParams.get('page');
-	if(!page) page = 'home.html';
-	const frame = document.getElementById("view");
-	frame.src = page;
-</script>
 </html>
