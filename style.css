@@ -1,44 +1,58 @@
-/* The sidebar menu */
+@font-face {
+	font-family: din;
+	src: url(resources/BAHNSCHRIFT.TTF);
+}
+
+@font-face {
+	font-family: body;
+	src: url(resources/CrimsonText-Regular.ttf);
+}
+
 .nav {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding: 0;
-  font-family: museoslab;
+	height: 100%;
+	width: 160px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	overflow-x: hidden;
+	padding: 0;
+	font-family: Bahnschrift, din;
+}
+
+.nav {
+	font-size: 25px;
+	display: block;
+}
+
+.nav a {
+	margin: 30px;
+}
+
+.nav a:hover {
+	color: #f1f1f1;
 }
 
 .nav #emblem{
-  margin: 0;
-  width:160px;
-  height:160px;
-}
-
-/* The navigation menu links */
-.nav a {
-  padding: 6px 8px 6px 16px;
-  font-size: 25px;
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.nav a:hover {
-  color: #f1f1f1;
+	margin: 0;
+	width:160px;
+	height:160px;
 }
 
 body {
     padding: 0px;
     margin: 0px;
-    background-color: #303443;
+    background-color: #000000;
     color: #FFFFFF;
     font-size: 22px;
     left: 160px;
     right: 0px;
     position: absolute;
-    font-family: CrimsonText;
+    font-family: body;
+}
+
+.content {
+    max-width: 800px;
 }
 
 @media screen and (max-width: 700px) {
@@ -49,7 +63,9 @@ body {
     }
 
     .nav a {
-        float: right;
+        float: left;
+        margin: 10px;
+        
     }
 
     .nav #emblem{
@@ -68,85 +84,70 @@ body {
     }
 }
 
-
-.content {
-    max-width: 800px;
-}
-
 .grid {
-  line-height: 0;
-  columns: 300px;
-  column-gap: 0px;
-  padding: 0;
-  margin-top:40px;
-  width:100%;
+	line-height: 0;
+	columns: 300px;
+	column-gap: 0px;
+	padding: 0;
+	margin-top:40px;
+	width:100%;
 }
 
 @supports (display: grid) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    padding: 0;
-    margin-top:40px;
-    width:100%;
-  }
-  .grid a{
-    width:100%;
-    height: 0;
-    padding-bottom: 100%;
-    display: block;
-  }
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		padding: 0;
+		margin-top:40px;
+		width:100%;
+	}
+	.grid a{
+		width:100%;
+		height: 0;
+		padding-bottom: 100%;
+		display: block;
+	}
 
-  .griditem{
-    width:100%;
-    height: 0;
-    padding-bottom: 100%;
-    display: block;
-  }
+	.griditem{
+		width:100%;
+		height: 0;
+		padding-bottom: 100%;
+		display: block;
+	}
 }
 
 video {
-  width: 100%;
+	width: 100%;
 }
 
 img {
-  width: 100%;
+	width: 100%;
 }
 
 a{
-  color: #47ddff;
-  border-width: 0px;
+	color: #47ddff;
+	border-width: 0px;
 }
 
 #view {
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  border: 0px;
-  padding: 0;
-}
-
-@font-face {
-  font-family: museoslab;
-  src: url(MuseoSlab-500.otf);
-}
-
-@font-face {
-  font-family: CrimsonText;
-  src: url(CrimsonText-Regular.ttf);
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	padding: 0;
 }
 
 h1{
-  font-weight:normal;
-  font-family: museoslab;
-  font-size: 60px;
-  margin-top: 70px;
-  padding-top: 0;
-  color: #E7FC00;
+	font-weight:normal;
+	font-family: Bahnschrift, din;
+	font-size: 60px;
+	margin-top: 80px;
+	padding-top: 0;
+	color: #FEE400;
 }
 
 h2{
-  font-weight:normal;
-  font-family: museoslab;
-  font-size: 30px;
+	font-weight:normal;
+	font-family: din;
+	font-size: 30px;
 }
