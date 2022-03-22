@@ -16,7 +16,7 @@
             Castle hall
         </h2>
         <p>
-            <iframe title="CGT 116 Week 8 - Advanced unit blocks" style="width:100%; aspect-ratio: 4 / 3;" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/8c6de08c5dd8447f8647d73d3bd4a908/embed?autostart=1&ui_theme=dark"> </iframe>
+            <iframe title="CGT 116 Week 8 - Advanced unit blocks" style="width:100%; aspect-ratio: 4 / 3;" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/8c6de08c5dd8447f8647d73d3bd4a908/embed?autostart=0&ui_theme=dark"> </iframe>
         </p>
         <p>
             A bored wooden king sits inside his castle hall.
@@ -25,10 +25,13 @@
             Experiment with lightbaking & Sketchfab. Materials and lighting are baked into a single 4k texture & displayed without shading. UVs are automatically packed to take full advantage of the limited texture space. Ugly
             black artifacts occur at seam edges, and I'll need to do some work to figure out how to fix this.
         </p>
-        <p>
+        <h2>
             <a href="https://pin.it/6i2bdML" target="_blank" rel="noopener noreferrer">
                 Pinterest board with reference & inspiration >
             </a>
+        </h2>
+        <p>
+            Trying to get screen reflections to work in this scene exposed a strange Sketchfab quirk. 'Shadeless' mode is good for showing baked lighting without other lighting effects interfering, but it doesn't support reflections. Instead, I tried using 'Lit' mode with the bake as an emission texture in a completely dark environment, but reflections still wouldn't work unless I enabled an HDRI environment. You wouldn't want an HDRI messing with the already-baked lighting of the scene, but I discovered this works <i>even if the HDRI strength is set to 0 and had no effect on the scene's lighting.</i>
         </p>
         
     </div>
@@ -52,7 +55,7 @@
         </h2>
         
         <p>
-            <iframe title="CGT 116 Week 8 - Advanced unit blocks" style="width:100%; aspect-ratio: 4 / 3;" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/180703cf088f45528cd8363554e7b7f5/embed?autostart=1&ui_theme=dark"> </iframe>
+            <iframe title="CGT 116 Week 8 - Advanced unit blocks" style="width:100%; aspect-ratio: 4 / 3;" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/180703cf088f45528cd8363554e7b7f5/embed?autostart=0&ui_theme=dark"> </iframe>
         </p>
         <p>
         	Another experiment with baked lighting using the same technique. 
