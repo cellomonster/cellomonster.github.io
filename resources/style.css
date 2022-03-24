@@ -1,11 +1,11 @@
 @font-face {
 	font-family: din;
-	src: url(Bahnschrift.ttf);
+	src: url(/resources/Bahnschrift.ttf);
 }
 
 @font-face {
 	font-family: body;
-	src: url(CrimsonText-Regular.ttf);
+	src: url(/resources/CrimsonText-Regular.ttf);
 }
 
 .nav {
