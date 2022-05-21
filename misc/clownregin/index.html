@@ -12,7 +12,7 @@
 
 	<img id="regin" src="regin.png" style="width: 100%; position: absolute;">
 
-	<a onmousedown="press()" onmouseup="up()">
+	<a href="#" onmousedown="press()" onmouseup="up()">
 		<div style="width: 20px; height: 20px; background-color: red; border-radius: 10px; left: 160px; top: 130px; position: absolute;">
 
 		</div>
@@ -25,13 +25,13 @@
 	var regin = document.getElementById("regin");
 
     function press() {
-        new Audio("honkdown.wav").play();
+        new Audio("honkpress.wav").play();
 
         regin.src = "pissed.png";
 
     }
     function up() {
-        new Audio("honkup.wav").play();
+        new Audio("honkrelease.wav").play();
     }
 </script>
 
